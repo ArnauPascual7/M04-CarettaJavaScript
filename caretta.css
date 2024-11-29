@@ -1,0 +1,108 @@
+body {margin: 0px}
+.no-lin {text-decoration: none}
+.color-black {color: black}
+.color-white {color: white}
+.no-list-style {list-style: none}
+nav {
+    position: sticky;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid;
+    padding-left: 10px;
+    top: 0;
+}
+#nav-ul {
+    margin-top: 50px;
+    width: 360px;
+    display: grid;
+    grid-template:
+        "ini lli cont" 50px
+        / 120px 120px 120px;
+}
+#nav-li-inici {grid-area: ini}
+#nav-li-llistat {grid-area: lli}
+#nav-li-contacte {grid-area: cont}
+#nav-ul>li>a:hover {color: skyblue}
+#lorem {
+    background-image: url(Img/linx.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 1px solid;
+    padding: 3% 40% 3% 3%;
+}
+#top {margin: 2%}
+#top>ol {
+    display: flex;
+    justify-content: space-around;
+}
+.top-animal {
+    border: 3px solid;
+    height: 450px;
+    border-radius: 25px;
+}
+.top-animal>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top-animal-image {
+    height: 250px;
+    width: 350px;
+}
+.top-animal-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 100%;
+}
+#biblio {
+    background-color: lightblue;
+    padding: 25px;
+    border: 1px solid;
+}
+footer {
+    background-color: black;
+    margin-top: -15px;
+    padding: 25px 100px 25px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#seg {text-align: right}
+#form-section {margin: 50px 50px 300px 50px}
+#form-section>form>* {padding: 10px}
+#fill {color: lightblue}
+@media (max-width: 1000px) or (max-height: 500px) {
+    #lorem {
+        background-size: 200%;
+        text-align: center;
+        padding-right: 20%;
+    }
+    #top {
+        text-align: center;
+    }
+    #top>ol {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height: 1500px;
+    }
+    .top-animal {
+        border: 3px solid;
+        height: 450px;
+        width: 350px;
+    }
+    #biblio>h2 {
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #seg {text-align: center}
+}
